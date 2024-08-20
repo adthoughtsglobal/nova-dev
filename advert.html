@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Advertisement</title>
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
         body {
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+font-family: 'Poppins', sans-serif;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-color: transparent;
         }
 
         .advertisement {
             width: 100%;
             max-width: 600px;
-            aspect-ratio: 16 / 9; /* Aspect ratio of 16:9 */
-            background-color: #ffffff;
+height:100%;
+            background-color: #101010;
             border: 1px solid #ccc;
             border-radius: 8px;
             overflow: hidden;
@@ -27,28 +30,62 @@
             display: flex;
             justify-content: center;
             align-items: center;
+background-size:cover;
             text-align: center;
-        }
-
-        .advertisement img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
+flex-wrap:nowrap;
+background-position:bottom left;
+background-image:url("https://adthoughtsglobal.github.io/nova-dev/multitasking%20wide.png");
         }
 
         .advertisement p {
-            margin: 0;
-            padding: 16px;
-            font-size: 1.2em;
-            color: #333;
+              margin: 0;
+    padding: 1rem;
+    display: flex;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    padding-left: 30%;
+    top: 0;
+    height: calc(100% - 1rem);
+    width: calc(70% - 1rem);
+    background: radial-gradient(ellipse at 100% 0%, #000000e0 60%, #00000000 80%);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
         }
+
+.gradient-text {
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(to bottom right, #ff85ea, #3c91ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+display:block;
+        }
+
+button {
+    background: linear-gradient(101deg, #df2eff, #2890ff);
+    color: white;
+    padding: 0.5rem 1.3rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-family: inherit;
+}
     </style>
 </head>
 <body>
     <div class="advertisement">
-        <img src="multitasking wide.png" alt="Advertisement">
-        <p>NovaOS is the best Web OS. And its free.</p>
-      <button>Try it</button>
+<div>
+        <p><g class="gradient-text">NovaOS</g> is the best Web OS. And its free.<br>
+      <button>Try it</button></p>
+</div>
     </div>
 </body>
 </html>
