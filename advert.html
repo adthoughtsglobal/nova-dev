@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Advertisement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .advertisement {
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: 16 / 9; /* Aspect ratio of 16:9 */
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .advertisement img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+        .advertisement p {
+            margin: 0;
+            padding: 16px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="advertisement">
+        <img src="multitasking wide.png" alt="Advertisement">
+        <p>NovaOS is the best Web OS. And its free.</p>
+      <button>Try it</button>
+    </div>
+</body>
+</html>
